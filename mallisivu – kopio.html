@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tony Ferguson | El Cucuy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Roboto;
+background:#0b0b0b;
+color:white;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:red;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url("https://upload.wikimedia.org/wikipedia/commons/6/67/Tony_Ferguson_2018.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-family:"Bebas Neue";
+font-size:90px;
+letter-spacing:5px;
+animation:glow 2s infinite alternate;
+}
+
+.hero p{
+font-size:22px;
+opacity:0.9;
+}
+
+/* SECTION */
+
+.section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section h2{
+font-family:"Bebas Neue";
+font-size:40px;
+margin-bottom:20px;
+border-left:4px solid red;
+padding-left:10px;
+}
+
+/* RECORD */
+
+.record{
+display:flex;
+justify-content:space-around;
+margin-top:30px;
+text-align:center;
+}
+
+.record div{
+font-size:30px;
+font-weight:bold;
+}
+
+.record span{
+display:block;
+font-size:14px;
+opacity:0.7;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#151515;
+padding:25px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px red;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px red;
+}
+
+/* VIDEO */
+
+.fight{
+margin-top:30px;
+}
+
+/* TABLE */
+
+.fight-table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+}
+
+.fight-table th,
+.fight-table td{
+border:1px solid #333;
+padding:12px;
+text-align:center;
+}
+
+.fight-table th{
+background:red;
+}
+
+.fight-table tr:hover{
+background:#1a1a1a;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+/* ANIMATION */
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px red;
+}
+
+to{
+text-shadow:0 0 30px red;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">Tietoa</a>
+<a href="#career">Ura</a>
+<a href="#gallery">Kuvat</a>
+<a href="#fight">Legend Fight</a>
+<a href="#record">Ottelut</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>TONY FERGUSON</h1>
+<p>EL CUCUY</p>
+</div>
+</section>
+
+<section class="section" id="about">
+
+<h2>Kuka hän on</h2>
+
+<p>
+Tony Ferguson on yksi UFC historian erikoisimmista kevytsarjan ottelijoista.
+Hänet tunnetaan aggressiivisesta tyylistä, spinning elboweista ja
+brutaalista paineesta otteluissa.
+</p>
+
+<div class="record">
+<div>25<span>Voittoa</span></div>
+<div>8<span>Tappiota</span></div>
+<div>12<span>Voittoputki</span></div>
+</div>
+
+</section>
+
+<section class="section" id="career">
+
+<h2>Saavutuksia</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>The Ultimate Fighter 13</h3>
+<p>Voitti TUF 13 ja nousi UFC:ään.</p>
+</div>
+
+<div class="card">
+<h3>12 Fight Win Streak</h3>
+<p>Yksi UFC lightweight divisioonan pisimmistä voittoputkista.</p>
+</div>
+
+<div class="card">
+<h3>Interim Champion</h3>
+<p>Voitti väliaikaisen UFC lightweight mestaruuden.</p>
+</div>
+
+<div class="card">
+<h3>Legendary Style</h3>
+<p>Spinning elbowt ja darce kuristukset.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2>Kuvagalleria</h2>
+
+<div class="gallery">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Tony_Ferguson_2018.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Tony_Ferguson_2016.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Tony_Ferguson_2017.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Tony_Ferguson_UFC.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="fight">
+
+<h2>Legendary Fight: Ferguson vs Pettis</h2>
+
+<p>
+Yksi UFC historian parhaista otteluista:
+Tony Ferguson vs Anthony Pettis vuonna 2018.
+Ottelu voitti Fight of the Night palkinnon.
+</p>
+
+<div class="fight">
+
+<iframe width="100%" height="400"
+src="https://www.youtube.com/embed/z1R3Yh4q3uE"
+title="Ferguson vs Pettis"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<section class="section" id="record">
+
+<h2>Otteluhistoria</h2>
+
+<table class="fight-table">
+
+<tr>
+<th>Tulos</th>
+<th>Vastustaja</th>
+<th>Tapa</th>
+<th>Tapahtuma</th>
+<th>Vuosi</th>
+</tr>
+
+<tr>
+<td>Win</td>
+<td>Rafael dos Anjos</td>
+<td>Decision</td>
+<td>UFC Fight Night</td>
+<td>2016</td>
+</tr>
+
+<tr>
+<td>Win</td>
+<td>Kevin Lee</td>
+<td>Submission</td>
+<td>UFC 216</td>
+<td>2017</td>
+</tr>
+
+<tr>
+<td>Win</td>
+<td>Anthony Pettis</td>
+<td>TKO</td>
+<td>UFC 229</td>
+<td>2018</td>
+</tr>
+
+<tr>
+<td>Win</td>
+<td>Donald Cerrone</td>
+<td>TKO</td>
+<td>UFC 238</td>
+<td>2019</td>
+</tr>
+
+<tr>
+<td>Loss</td>
+<td>Justin Gaethje</td>
+<td>TKO</td>
+<td>UFC 249</td>
+<td>2020</td>
+</tr>
+
+<tr>
+<td>Loss</td>
+<td>Charles Oliveira</td>
+<td>Decision</td>
+<td>UFC 256</td>
+<td>2020</td>
+</tr>
+
+<tr>
+<td>Loss</td>
+<td>Beneil Dariush</td>
+<td>Decision</td>
+<td>UFC 262</td>
+<td>2021</td>
+</tr>
+
+<tr>
+<td>Loss</td>
+<td>Michael Chandler</td>
+<td>KO</td>
+<td>UFC 274</td>
+<td>2022</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>Tony Ferguson Fan Site | UFC Style</p>
+
+</footer>
+
+</body>
+</html>
