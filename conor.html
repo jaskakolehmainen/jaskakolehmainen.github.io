@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conor McGregor | The Notorious</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Roboto;
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("conor_bg.jpg");
+
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+}
+
+/* 🔥 LISÄTTY KULMALINKKI */
+.corner-link{
+position:fixed;
+top:20px;
+right:20px;
+background:orange;
+color:black;
+padding:10px 15px;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+box-shadow:0 0 15px rgba(0,0,0,0.6);
+transition:0.3s;
+z-index:2000;
+}
+
+.corner-link:hover{
+background:white;
+transform:scale(1.05);
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url("conor_hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-family:"Bebas Neue";
+font-size:110px;
+letter-spacing:6px;
+text-shadow:0 0 40px orange;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:90px 20px;
+}
+
+.section h2{
+font-family:"Bebas Neue";
+font-size:45px;
+border-left:5px solid orange;
+padding-left:12px;
+margin-bottom:20px;
+}
+
+.profile{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.profile img{
+width:100%;
+border-radius:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px orange;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+background:#111;
+}
+
+th,td{
+border:1px solid #333;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:orange;
+}
+
+tr:hover{
+background:#1a1a1a;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 LISÄTTY LINKKI -->
+<a href="file:///C:/Users/kolejas/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/index.html" class="corner-link">
+← Takaisin etusivulle
+</a>
+
+<nav>
+<a href="#about">Tietoa</a>
+<a href="#person">Yksityiselämä</a>
+<a href="#career">Ura</a>
+<a href="#gallery">Kuvat</a>
+<a href="#record">Otteluhistoria</a>
+</nav>
+
+<section class="hero">
+<h1>CONOR McGREGOR</h1>
+</section>
+
+<section class="section" id="about">
+
+<h2>Kuka on Conor McGregor?</h2>
+
+<div class="profile">
+
+<img src="conor1.jpg">
+
+<p>
+Conor McGregor on irlantilainen vapaaottelija ja yksi
+kaikkien aikojen tunnetuimmista UFC-tähdistä.
+Hänestä tuli ensimmäinen ottelija UFC historiassa,
+joka hallitsi samanaikaisesti kahta painoluokkaa.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section" id="person">
+
+<h2>Conor McGregor yksityiselämä</h2>
+
+<p>
+McGregor syntyi Dublinissa vuonna 1988 ja työskenteli
+nuorena putkimiehenä ennen MMA-uraa.
+
+Hän on pitkäaikaisessa parisuhteessa Dee Devlinin kanssa
+ja heillä on useita lapsia. McGregor tunnetaan myös
+ylellisestä elämäntyylistään, luksusautoista,
+jahdeista sekä Proper Twelve -viskibrändistä.
+
+Hänen persoonansa on itsevarma ja provosoiva,
+mikä on tehnyt hänestä valtavan mediapersoonan.
+</p>
+
+</section>
+
+
+<section class="section" id="career">
+
+<h2>Conor McGregor ura</h2>
+
+<p>
+McGregor aloitti uransa Irlannin Cage Warriors
+organisaatiossa, jossa hän voitti featherweight
+ja lightweight mestaruudet.
+
+UFC:ssä hän nousi superstardomiksi tyrmättyään
+Jose Aldon 13 sekunnissa ja voittamalla myöhemmin
+Eddie Alvarezin tullakseen double champiksi.
+
+Hän otteli myös nyrkkeilyottelun Floyd Mayweatheria vastaan
+vuonna 2017.
+</p>
+
+</section>
+
+
+<section class="section" id="gallery">
+
+<h2>Kuvagalleria</h2>
+
+<div class="gallery">
+
+<img src="conor2.jpg">
+<img src="conor1.jpg">
+<img src="conor3.jpg">
+<img src="conor4.jpg">
+
+</div>
+
+</section>
+
+
+<section class="section" id="record">
+
+<h2>Koko otteluhistoria</h2>
+
+<table>
+
+<tr>
+<th>Tulos</th>
+<th>Vastustaja</th>
+<th>Tapa</th>
+<th>Tapahtuma</th>
+<th>Vuosi</th>
+</tr>
+
+<tr><td>L</td><td>Dustin Poirier</td><td>TKO (Doctor Stoppage)</td><td>UFC 264</td><td>2021</td></tr>
+<tr><td>L</td><td>Dustin Poirier</td><td>KO</td><td>UFC 257</td><td>2021</td></tr>
+<tr><td>W</td><td>Donald Cerrone</td><td>TKO</td><td>UFC 246</td><td>2020</td></tr>
+<tr><td>L</td><td>Khabib Nurmagomedov</td><td>Submission</td><td>UFC 229</td><td>2018</td></tr>
+<tr><td>W</td><td>Eddie Alvarez</td><td>TKO</td><td>UFC 205</td><td>2016</td></tr>
+<tr><td>W</td><td>Nate Diaz</td><td>Decision</td><td>UFC 202</td><td>2016</td></tr>
+<tr><td>L</td><td>Nate Diaz</td><td>Submission</td><td>UFC 196</td><td>2016</td></tr>
+<tr><td>W</td><td>Jose Aldo</td><td>KO</td><td>UFC 194</td><td>2015</td></tr>
+<tr><td>W</td><td>Chad Mendes</td><td>TKO</td><td>UFC 189</td><td>2015</td></tr>
+<tr><td>W</td><td>Dennis Siver</td><td>TKO</td><td>UFC Fight Night</td><td>2015</td></tr>
+<tr><td>W</td><td>Dustin Poirier</td><td>TKO</td><td>UFC 178</td><td>2014</td></tr>
+<tr><td>W</td><td>Diego Brandao</td><td>TKO</td><td>UFC FN Dublin</td><td>2014</td></tr>
+<tr><td>W</td><td>Max Holloway</td><td>Decision</td><td>UFC FN</td><td>2013</td></tr>
+<tr><td>W</td><td>Marcus Brimage</td><td>TKO</td><td>UFC on Fuel</td><td>2013</td></tr>
+
+<tr><td>W</td><td>Ivan Buchinger</td><td>KO</td><td>Cage Warriors</td><td>2012</td></tr>
+<tr><td>W</td><td>Dave Hill</td><td>Submission</td><td>Cage Warriors</td><td>2011</td></tr>
+<tr><td>W</td><td>Steve O’Keefe</td><td>TKO</td><td>Cage Contender</td><td>2011</td></tr>
+<tr><td>W</td><td>Paddy Doherty</td><td>TKO</td><td>IFC</td><td>2010</td></tr>
+<tr><td>L</td><td>Joseph Duffy</td><td>Submission</td><td>Cage Warriors</td><td>2010</td></tr>
+<tr><td>W</td><td>Connor Dillon</td><td>Submission</td><td>Battlezone</td><td>2009</td></tr>
+<tr><td>W</td><td>Mo Taylor</td><td>TKO</td><td>Battlezone</td><td>2009</td></tr>
+<tr><td>W</td><td>Gary Morris</td><td>TKO</td><td>Cage Rage</td><td>2009</td></tr>
+<tr><td>W</td><td>Stephen Bailey</td><td>TKO</td><td>Raw Combat</td><td>2009</td></tr>
+<tr><td>W</td><td>Aron Jahnsen</td><td>TKO</td><td>Cage Rage</td><td>2008</td></tr>
+<tr><td>L</td><td>Artemij Sitenkov</td><td>Submission</td><td>Cage Rage</td><td>2008</td></tr>
+
+</table>
+
+</section>
+
+<footer>
+Conor McGregor Fan Site
+</footer>
+
+</body>
+</html>
